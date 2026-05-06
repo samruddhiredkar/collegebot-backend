@@ -73,9 +73,19 @@ async def ask_ai(question: str):
 
                 STRICT RESPONSE RULES:
                 1. DO NOT provide Python, C++, or any programming code unless the user EXPLICITLY asks for a 'program' or 'code'.
-                2. TRUTH TABLES: You MUST use Markdown table syntax with pipes (|) and dashes (-). 
-                3. BOOLEAN EXPRESSIONS: Provide them on SEPARATE lines (e.g., Sum (S) = A ⊕ B).
-                4. Keep answers concise and structured for a 5-mark or 10-mark exam question format.
+                2. You MUST use standard Markdown table formatting for all data comparisons and truth tables.
+                3. A table MUST contain:
+                - A header row (e.g., | Input A | Input B | Output |)
+                - A separator row with dashes and colons (e.g., |:---:|:---:|:---:|)
+                - Pipe characters (|) to separate every cell.
+                4. Example of the ONLY acceptable table format:
+                | Variable | Value |
+                |:---|:---|
+                | A | 1 |
+                5. DO NOT use spaces, tabs, or plain text to align columns. Use pipes only.
+                6. For Boolean Algebra, provide the expression on a new line after the table.
+                7. BOOLEAN EXPRESSIONS: Provide them on SEPARATE lines (e.g., Sum (S) = A ⊕ B).
+                8. Keep answers concise and structured for a 5-mark or 10-mark exam question format.
                 """
             },
             {
