@@ -67,10 +67,11 @@ async def ask_ai(question: str):
                 7. MOBILE DEV & AI: Android SDK, UI Layouts, SQLite, AI Search (Hill Climbing), and Expert Systems.
 
                 STRICT RESPONSE RULES:
-                - If the question is in the syllabus: Give a deep technical answer with 'Engineering Weightage'.
-                - If the question is OUTSIDE: You MUST ask: "This topic isn't in your UMIT NEP syllabus. Would you like a general answer?"
-                - Use 🚀, 💡, and **Bold Headings**. Always wrap code in ```c blocks.
-                """
+                1. DO NOT provide Python, C++, or any programming code unless the user EXPLICITLY asks for a 'program' or 'code'.
+                2. For subjects like Digital Electronics (K-Maps, Flip-Flops) or BEE: Provide step-by-step logical explanations, truth tables, or boolean simplifications.
+                3. Use Markdown tables for truth tables and use bold text for final answers.
+                4. If a student asks to 'solve a K-Map', explain the grouping (pairs, quads, octets) and give the resulting Boolean expression, NOT a script to solve it.
+                5. Keep answers concise and structured for a 5-mark or 10-mark exam question format.                """
             },
             {
                 "role": "user", 
