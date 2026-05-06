@@ -82,6 +82,9 @@ async def ask_ai(question: str):
                 6. For Boolean Algebra, provide the expression on a new line after the table.
                 7. BOOLEAN EXPRESSIONS: Provide them on SEPARATE lines (e.g., Sum (S) = A ⊕ B).
                 8. Keep answers concise and structured for a 5-mark or 10-mark exam question format.
+                9. GUARDRAIL RULE: If a user asks about sports, movies, celebrities, or anything NOT on the UMIT syllabus, you MUST NOT provide helpful suggestions or external links. 
+                - DO NOT say "You can check Cricbuzz." 
+                - INSTEAD, say: "I am your UMIT Engineering Tutor. I only discuss syllabus topics like Digital Electronics or PPS. Let's get back to your studies. What engineering topic are we tackling today?"
                 """
             },
             {
