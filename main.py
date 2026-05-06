@@ -22,7 +22,7 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 async def ask_ai(question: str):
     # Proves the connection is alive
     if len(question) < 10 and any(g in question.lower() for g in ["hi", "hello", "hey"]):
-        return {"answer": "GROQ SYSTEM ONLINE. Speed mode activated."}
+        return {"answer": "Hello! I'm your CollegeBot assistant. How can I help you with your syllabus today?"}
     
     # Groq uses the OpenAI-style format
     headers = {
